@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CourseWork</string>
+    <string name="welcome">Welcome to the application for generating a color palette based on the colors you have already selected in the layout. A little below you can attach your file</string>
+    <string name="add_your_file_with_ui">Add your file with ui</string>
+    <string name="add_a_file">Add a file</string>
+    <string name="rec_colors">Рекомендуемая цветовая палитра:</string>
+</resources>
