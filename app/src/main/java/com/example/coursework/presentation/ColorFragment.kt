@@ -2,11 +2,8 @@ package com.example.coursework.presentation
 
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -35,13 +32,7 @@ internal class ColorFragment : Fragment(R.layout.fragment_color) {
 
         observeViewModel()
 
-        val uri = arguments?.getString(ARG_FILE_URI)
-        uri?.let { uri ->
-            val file = getFileFromUri(uri.toUri())
-            file?.let { file ->
-                viewModel.getRecommendations(file)
-            }
-        }
+        viewModel.getRecommendations()
     }
 
     private fun observeViewModel() {

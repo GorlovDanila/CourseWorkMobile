@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         supportFragmentManager.commit {
-            add(R.id.fragment_container, PickDocumentFragment())
+            add(R.id.fragment_container, ColorFragment())
         }
     }
 }
